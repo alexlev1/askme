@@ -4,11 +4,16 @@ class User < ApplicationRecord
   # параметры работы модуля шифрования паролей
   ITERATIONS = 20000
   DIGEST = OpenSSL::Digest::SHA256.new
+  VALID_EMAIL = '\A[a-z\d_+.\-]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z'
+  VALID_USERNAME = '\A[a-zA-Z0-9_]+\z'
 
   has_many :questions
 
   validates :email, :username, presence: true
   validates :email, :username, uniqueness: true
+  validates :email, format: { with: /#{VALID_EMAIL}/i, message: 'is non valid'}
+  validates :username, length: { maximum: 40 }
+  validates :username, format: { with: /#{VALID_USERNAME}/, message: 'is non valid'}
 
   attr_accessor :password
 

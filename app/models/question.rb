@@ -3,4 +3,5 @@ class Question < ApplicationRecord
 
   validates :text, presence: true
   validates :text, :user, presence: true
+  validates :text, length: { maximum: 255 } # максимальная длина 255 символов
 end
