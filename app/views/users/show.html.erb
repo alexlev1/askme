@@ -37,6 +37,7 @@
 
 <div class="column-3-4">
   <div class="user-questions buffer-both">
+    <p class="user-question-count"><%= question_decline(@questions.length) %></p>
     <div class="questions-list">
       <% @questions.each do |question| %>
         <%= render partial: 'questions/question', object: question %>

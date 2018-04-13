@@ -23,6 +23,11 @@
   color: #005a55;
 }
 
+.user-question-count {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
 .question-answer {
 }
 
