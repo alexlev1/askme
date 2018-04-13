@@ -1,0 +1,118 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+/* Menu */
+
+.menu {
+  opacity: 0.95;
+  background: white;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 2px red dashed;
+  color: red;
+}
+
+.nav-list a:hover {
+  border-bottom: none;
+  color: black;
+  transition: all ease .3s;
+}
+
+.nav-menu-point {
+  display: inline;
+  list-style-type: none;
+}
+
+/* Header */
+
+.header {
+  background: transparent;
+  background-size: cover;
+}
+
+
+.big-title {
+  font-size: 50px;
+  color: white;
+}
+
+.header-text {
+  font-size:30px;
+  color: white;
+}
+
+/* Main Body */
+
+.medium-title {
+  font-size: 36px;
+}
+
+.feature-icon,
+.step-icon {
+  width: 100px;
+}
+
+/* About us */
+
+.features {
+  width: 100%;
+}
+
+/* Projects */
+
+.finfine {
+  background: url('../images/finfine.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.project-title {
+  font-size: 30px;
+  color: white;
+}
+
+.project-text {
+  font-size: 16px;
+  color: white;
+}
+
+.project-features {
+  font-size: 14px;
+  line-height: 28px;
+  color: white;
+}
+
+/* How we works */
+
+.how-we-works {
+  min-height: 400px;
+  background: transparent;
+  background-size: cover;
+  color: white;
+}
+
+.work-steps {
+  width: 100%;
+}
+
+.step-icon {
+  fill: #ffb600;
+}
+
+/* Contacts */
+
+.mail-icon {
+  width: 130px;
+}
+
+.call-to-action {
+  font-weight: 600;
+}
+
+.call-to-action span {
+  font-weight: 700;
+}
