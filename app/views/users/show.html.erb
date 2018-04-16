@@ -37,7 +37,11 @@
 
 <div class="column-3-4">
   <div class="user-questions buffer-both">
-    <p class="user-question-count"><%= question_decline(@questions.length) %></p>
+    <p class="user-question-count">
+      Всего:
+      <%= @questions.length %>
+      <%= question_decline(@questions.length, 'вопрос', 'вопроса', 'вопросов') %>
+    </p>
     <div class="questions-list">
       <% @questions.each do |question| %>
         <%= render partial: 'questions/question', object: question %>

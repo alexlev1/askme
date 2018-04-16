@@ -7,21 +7,21 @@ module ApplicationHelper
     end
   end
 
-  def question_decline(number)
+  def question_decline(number, vopros, voprosa, voprosov)
     remain = number % 10
     big_remain = number % 100
 
-    return "Всего: #{number} вопросов" if big_remain.between?(11, 14)
+    return voprosov if big_remain.between?(11, 14)
 
     case remain
     when 1
-      return "Всего: #{number} вопрос"
+      return vopros
     when 2..4
-      return "Всего: #{number} вопроса"
+      return voprosa
     when 0
-      return "К пользователю нет вопросов..."
+      return voprosov
     else
-      return "Всего: #{number} вопросов"
+      return voprosov
     end
   end
 end
