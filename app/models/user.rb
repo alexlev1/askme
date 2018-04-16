@@ -5,23 +5,22 @@ class User < ApplicationRecord
   ITERATIONS = 20000
   DIGEST = OpenSSL::Digest::SHA256.new
   VALID_EMAIL = '.+@.+\..+'
-  VALID_USERNAME = '\A[a-z]+([_]?[a-z0-9]+){0,2}\z'
+  VALID_USERNAME = '\A[a-z]+(_?[a-z0-9]+){0,2}\z'
 
   has_many :questions
 
   validates :email, :username, presence: true
   validates :email, :username, uniqueness: { case_sensitive: false }
-  validates :email, format: { with: /#{VALID_EMAIL}/i, message: 'is non valid'}
+  validates :email, format: { with: /#{VALID_EMAIL}/i }
   validates :username, length: { maximum: 40 }
-  validates :username, format: { with: /#{VALID_USERNAME}/i, message: 'is non valid'}
+  validates :username, format: { with: /#{VALID_USERNAME}/i }
 
   attr_accessor :password
 
   validates_presence_of :password, on: :create
   validates_confirmation_of :password
-
+  before_validation :downcase_username
   before_save :encrypt_password
-  before_save :downcase_username
 
   def downcase_username
     self.username = username.downcase
