@@ -12,6 +12,8 @@ class UsersController < ApplicationController
 
     if @user.save
       redirect_to root_url, notice: 'Пользователь успешно зарегистрирован!'
+    else
+      render 'new'
     end
   end
 
@@ -19,6 +21,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    
   end
 
   private
