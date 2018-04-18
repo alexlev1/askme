@@ -4,6 +4,8 @@ class User < ApplicationRecord
   # параметры работы модуля шифрования паролей
   ITERATIONS = 20000
   DIGEST = OpenSSL::Digest::SHA256.new
+
+  # валидации:
   VALID_EMAIL = '.+@.+\..+'
   VALID_USERNAME = '\A[a-z]+(_?[a-z0-9]+){0,2}\z'
 
