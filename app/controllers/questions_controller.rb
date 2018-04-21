@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  before_action :load_question, only: [:show, :edit, :update, :destroy]
+  before_action :load_question, only: [:edit, :update, :destroy]
   before_action :authorize_user, except: [:create]
 
   # GET /questions/1/edit
@@ -13,7 +13,7 @@ class QuestionsController < ApplicationController
     if @question.save
       redirect_to user_path(@question.user), notice: 'Вопрос задан'
     else
-      render :new
+      render :edit
     end
   end
 
