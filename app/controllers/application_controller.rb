@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   def reject_user
     redirect_to root_path, alert: 'Вам сюда нельзя! Зарегистрируйтесь или войдите в свой аккаунт'
   end
+
+  def authenticate_user(user)
+    session[:user_id] = user.id
+  end
 end
