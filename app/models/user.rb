@@ -9,7 +9,7 @@ class User < ApplicationRecord
   VALID_EMAIL = '.+@.+\..+'
   VALID_USERNAME = '\A[a-z]+(_?[a-z0-9]+){0,2}\z'
 
-  has_many :questions
+  has_many :questions, dependent: :destroy
 
   validates :email, :username, presence: true
   validates :email, :username, uniqueness: { case_sensitive: false }
