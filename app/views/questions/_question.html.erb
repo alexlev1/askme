@@ -17,10 +17,15 @@
       <%= l(question.created_at, format: :short) %>
     </div>
 
-    <div class="question-author">
-      by <%= question.author %>
+    <div class="question-user">
+        <span class="text-small">by:
+        <% if question.author.present? %>
+          <%= link_to "@#{question.author.username}", user_path(question.author) %>
+        <% else %>
+          Anonymous
+        <% end %>
+        </span>
     </div>
-
   </div>
 
   <% if question.user == current_user %>
