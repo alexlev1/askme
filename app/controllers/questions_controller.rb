@@ -44,11 +44,24 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
   end
 
+  def check_author
+    @user = User.find_by(id: session[:user_id])
+    @user.username
+  end
+
+  def assign_author
+    params[:question][:author] = check_author if current_user.present?
+  end
+
   def question_params
+    assign_author
+
     if current_user.present? && params[:question][:user_id].to_i == current_user.id
-      params.require(:question).permit(:user_id, :text, :answer)
+      params.require(:question).permit(:user_id, :text, :answer, :author)
     else
-      params.require(:question).permit(:user_id, :text)
+      params.require(:question).permit(:user_id, :text, :author)
     end
   end
+
+
 end

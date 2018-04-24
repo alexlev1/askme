@@ -16,6 +16,11 @@
     <div class="question-date">
       <%= l(question.created_at, format: :short) %>
     </div>
+
+    <div class="question-author">
+      by <%= question.author %>
+    </div>
+
   </div>
 
   <% if question.user == current_user %>

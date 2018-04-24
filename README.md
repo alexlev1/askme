@@ -1,24 +1,16 @@
-# README
+# "Хорошие вопросы" - клон ask.fm
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Учебное приложение для "Хорошего программиста".
 
-Things you may want to cover:
+Написано на Rails 5.1.5
 
-* Ruby version
+### Реализовано:
+- Регистрация и аутентификация пользователя.
+- Редактирование профиля пользователя.
+- Возможность задавать вопросы (а также: редактировать и удалять).
 
-* System dependencies
+Посмотреть как приложение работает на Heroku:
+https://azkme.herokuapp.com/
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Автор:
+[Александр Левашов](https://alevashov.ru/)
