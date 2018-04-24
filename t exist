@@ -1,0 +1,197 @@
+[33mcommit cfc4bc451dc97240340c1a76d955207eba2a0fd6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Tue Apr 24 21:32:42 2018 +0300
+
+    Add author of question
+
+[33mcommit 536bc771017536b1afe8c6e37434bae9f461b095[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sun Apr 22 19:41:50 2018 +0300
+
+    Add destroy action for delete user accaunt
+
+[33mcommit 6f313de46d8000f6d17844cd78bfd973a12d3ba3[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sun Apr 22 19:16:53 2018 +0300
+
+    Add authenticate after create user
+
+[33mcommit a55d07dd9e673894821a9c13a8012a2a419eeef4[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 17:45:31 2018 +0300
+
+    Add counter of answers and questions in action show, fix small bugs
+
+[33mcommit c25e0ef3735e5579919ba10d7aba5d5b1c0583e4[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 17:24:01 2018 +0300
+
+    Add responsive for mobile
+
+[33mcommit a5a255dc55327a9866dcb409e5974935c041dd41[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 17:19:26 2018 +0300
+
+    Change Avatar template
+
+[33mcommit e0aaf45789e268ade892e9dcc2fb818ff175191b[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 16:53:25 2018 +0300
+
+    Prepare for deploy on Heroku
+
+[33mcommit 42097a280336bfbc7c3f7605cc7d56b12c2d6b5f[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 14:43:46 2018 +0300
+
+    Security fix user_id
+
+[33mcommit c54d89febd440b09f9ed25f749fe67e00e04ef92[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 14:35:44 2018 +0300
+
+    Fix timezone
+
+[33mcommit ae9dade0a38bd5fa741b0473494e9cd46917404f[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 14:33:10 2018 +0300
+
+    Add QuestionsController, add partials
+
+[33mcommit 4c5efd19ecf1027adffab5d20155965b8bc1aa6c[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 21 13:53:07 2018 +0300
+
+    Add session controller functional, add authenticate
+
+[33mcommit 366a938525be68a1b358fe3d458242cc481640b3[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Thu Apr 19 00:26:09 2018 +0300
+
+    Create SessionsController, change routes, create new action view
+
+[33mcommit 476d4937b7731c1631991904ad76ad08d7a5e1bf[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Wed Apr 18 23:42:23 2018 +0300
+
+    Add update action in Users Controller, add before action
+
+[33mcommit c25f195ab92a9a9d293098307670948a03af78ff[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Wed Apr 18 23:32:58 2018 +0300
+
+    Add action edit in Users Controller, fix styles
+
+[33mcommit 33614113a926093065360b6b1f81ff4d7f2c7cce[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Wed Apr 18 23:20:57 2018 +0300
+
+    Add show action in Users Controller
+
+[33mcommit 693cedb8921937700988fc1090b28a45d0b6c1fb[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Wed Apr 18 23:16:14 2018 +0300
+
+    Add error message in new view
+
+[33mcommit 038a1465a64f4e590843cba7beac8eed37ee8f58[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Tue Apr 17 18:13:16 2018 +0300
+
+    Add notice for new users, add redirect for new users in UsersController
+
+[33mcommit 55cd516bc0d25345873beb5be7bd09fdfdd35db3[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Tue Apr 17 16:59:09 2018 +0300
+
+    Change routes for User, change Users Controller and View for action new
+
+[33mcommit 8e9bf2e48dc5359b7a655fb0f9da43cbed9aae87[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Mon Apr 16 21:18:52 2018 +0300
+
+    Fix User migration, add unique params
+
+[33mcommit 3ce92cb80c5a1e36dc48f711404473e073c3dfe4[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Mon Apr 16 21:02:23 2018 +0300
+
+    Add index in User Model DB
+
+[33mcommit 14ec46c40f209bc8aaf4e610ef7624dccf524227[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Mon Apr 16 20:15:09 2018 +0300
+
+    Fix User model
+
+[33mcommit 908a54f79ba8191655b4cbee31a4c4a831d03044[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Mon Apr 16 19:59:45 2018 +0300
+
+    fix question_decline helper
+
+[33mcommit a3c5c4d0862fea538f64dce1a32f9d4b77d83a52[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 14 00:59:56 2018 +0300
+
+    Add question_decline helper
+
+[33mcommit 460dea0bc8c0744c69ea0d1a061b94eeae746345[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 14 00:11:56 2018 +0300
+
+    Add uglifier for JS assets
+
+[33mcommit e7a7aedfd1de2d370f0fbde425d47b30f4217422[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 14 00:05:06 2018 +0300
+
+    Fix bug for deploy in Gemfile
+
+[33mcommit a590aa8c06d5cf785d566e263d55189f70808a70[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Fri Apr 13 23:56:24 2018 +0300
+
+    Prepare for deploy, add and change styles
+
+[33mcommit d84e2c3ba6b8754ba1fc2869e8e4019bdcfddbc9[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Fri Apr 13 20:39:55 2018 +0300
+
+    Add Views and styles
+
+[33mcommit 6521761a65a1bca2df1e5e15e7aeb1661c8467d9[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Fri Apr 13 17:47:10 2018 +0300
+
+    Fix regexp in User model
+
+[33mcommit 1a36ddb2a37903fb4d3382378afdb4b4236358f2[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Fri Apr 13 00:16:23 2018 +0300
+
+    Add downcase_username validation, add downcase_username callback before_save
+
+[33mcommit 948457bbad08f0f7c356fa01822da9fca8fbe5a0[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Thu Apr 12 23:51:02 2018 +0300
+
+    Add validations to User and Question models
+
+[33mcommit d16db506e3a09388df3e009990432c422fac11bb[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Wed Apr 11 00:46:55 2018 +0300
+
+    Add callbacks, validates and references between User and Question
+
+[33mcommit 99b6be1a8c884e185b5995916a30a0c2e76e8d6c[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Sat Apr 7 00:12:39 2018 +0300
+
+    Create basic Models, add simple Controller and View templates
+
+[33mcommit c6de37ddc54a7e7939f5699f9ed94e04dc3172cf[m
+Author: Alex Levashov <alevash1@gmail.com>
+Date:   Fri Apr 6 23:39:45 2018 +0300
+
+    initital commit
