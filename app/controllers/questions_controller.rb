@@ -58,9 +58,9 @@ class QuestionsController < ApplicationController
     assign_author
 
     if current_user.present? && params[:question][:user_id].to_i == current_user.id
-      params.require(:question).permit(:user_id, :text, :answer, :author)
+      params.require(:question).permit(:user_id, :text, :answer)
     else
-      params.require(:question).permit(:user_id, :text, :author)
+      params.require(:question).permit(:user_id, :text)
     end
   end
 
