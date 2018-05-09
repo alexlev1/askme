@@ -16,7 +16,7 @@ class User < ApplicationRecord
   validates :email, format: { with: /#{VALID_EMAIL}/i }
   validates :username, length: { maximum: 40 }
   validates :username, format: { with: /#{VALID_USERNAME}/i }
-  validates :header_style, format: { with: /\A\#[\da-fA-Z]{6}\z/ }
+  validates :header_style, format: { with: /\A\#[\da-fA-Z]{6}\z/ }, if: :editing_mode?
 
   attr_accessor :password
 
@@ -27,6 +27,10 @@ class User < ApplicationRecord
 
   def downcase_username
     self.username = username.downcase
+  end
+
+  def editing_mode?
+    persisted?
   end
 
   def encrypt_password
