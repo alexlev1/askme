@@ -16,6 +16,7 @@ class User < ApplicationRecord
   validates :email, format: { with: /#{VALID_EMAIL}/i }
   validates :username, length: { maximum: 40 }
   validates :username, format: { with: /#{VALID_USERNAME}/i }
+  validates :header_style, format: { with: /\A\#[\da-fA-Z]{6}\z/ }
 
   attr_accessor :password
 

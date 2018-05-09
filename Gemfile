@@ -9,6 +9,7 @@ gem 'rails', '~> 5.1.5'
 gem 'puma', '~> 3.7'
 gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
+gem 'rails-i18n', '~> 5.1'
 
 group :production do
   gem 'pg'
