@@ -1,0 +1,14 @@
+<div class="user-statistics container text-center">
+  <div class="column-1-3">
+    <h1 class="title-small"><%= @questions_count %></h1>
+    <p><%= question_decline(@questions_count, t('question.one'), t('question.few'), t('question.many')) %></p>
+  </div>
+  <div class="column-1-3">
+    <h1 class="title-small"><%= @answers_count %></h1>
+    <p><%= question_decline(@answers_count, t('answer.one'), t('answer.few'), t('answer.many')) %></p>
+  </div>
+  <div class="column-1-3">
+    <h1 class="title-small"><%= @unanswered_count %></h1>
+    <p><%= question_decline(@unanswered_count, t('unanswered.one'), t('unanswered.few'), t('unanswered.many')) %></p>
+  </div>
+</div>

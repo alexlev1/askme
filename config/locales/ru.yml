@@ -1,6 +1,13 @@
 ru:
-  questions_users:
-    zero: '%{number} вопросов'
-    one: '%{number} вопрос'
-    few: '%{number} вопроса'
-    many: '%{number} вопросов'
+  question:
+    one: 'вопрос'
+    few: 'вопроса'
+    many: 'вопросов'
+  answer:
+    one: 'вопрос'
+    few: 'вопроса'
+    many: 'вопросов'
+  unanswered:
+    one: 'вопрос'
+    few: 'вопроса'
+    many: 'вопросов'
