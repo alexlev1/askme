@@ -23,7 +23,7 @@
         <%= link_to "@#{current_user.username}", user_path(current_user) %>
         <%= link_to 'Выйти', session_path, data: { method: :delete } %>
       <% else %>
-        <%= link_to 'Зарегистрироваться', new_user__path, class: 'button button-light button-small' %>
+        <%= link_to 'Зарегистрироваться', new_user_path, class: 'button button-light button-small' %>
         <%= link_to 'Войти', new_session_path, class: 'button button-light button-small' %>
       <% end %>
     </div>
